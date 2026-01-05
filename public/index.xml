@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Kallum Cooper</title><link>http://kallumcooper.co.uk/</link><description>Recent content in Home on Kallum Cooper</description><generator>Hugo</generator><language>en-gb</language><atom:link href="http://kallumcooper.co.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>http://kallumcooper.co.uk/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://kallumcooper.co.uk/about/</guid><description>&lt;p&gt;I’m a Senior Infrastructure Engineer focused on automation, Terraform, and platform engineering.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS + Terraform modules&lt;/li&gt;
+&lt;li&gt;Observability and monitoring&lt;/li&gt;
+&lt;li&gt;Networking and infrastructure&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

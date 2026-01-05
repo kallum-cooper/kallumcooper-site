@@ -1,0 +1,183 @@
+baseURL: "http://kallumcooper.co.uk/"
+languageCode: "en-gb"
+title: "Kallum Cooper"
+theme: "hugo-profile"
+
+
+# Menus:
+#   main:
+#     - identifier: about
+#       name: About
+#       url: /#about
+#       weight: 1
+#     - identifier: experience
+#       name: Experience
+#       url: /#experience
+#       weight: 2
+#     - identifier: projects
+#       name: Projects
+#       url: /#projects
+#       weight: 3
+#     - identifier: contact
+#       name: Contact
+#       url: /#contact
+#       weight: 4
+
+params:
+  title: "Kallum Cooper"
+  description: "Senior Infrastructure Engineer • AWS Cloud Practitioner • Infrastructure • Automation • ex-RAF"
+  favicon: "favicon.svg"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  navbar:
+    align: ms-auto
+    brandName: "Kallum Cooper"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: true
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Kallum Cooper"
+    subtitle: "Senior Infrastructure Engineer"
+    content: "I build reliable infrastructure with Terraform and automation — spanning AWS, Linux/Windows estates, and enterprise networking. This site is part of my Terraform module portfolio and as such was built using Terraform and hosted via AWS."
+    image: /images/hero.png
+    Width: 520
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "View projects"
+      url: "#projects"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: "https://github.com/kallum-cooper"
+        - icon: fab fa-linkedin
+          url: "https://www.linkedin.com/in/kallum-cooper/"
+        - icon: fa fa-envelope
+          url: "mailto:kallumcooper97@gmail.com"
+
+  about:
+    enable: true
+    title: "About Me"
+    align: center
+    image: images/me.jpeg
+    content: |-
+      Senior Infrastructure Engineer and AWS Cloud Practitioner with a strong background in automation, monitoring, and secure infrastructure. Previously served in the Royal Air Force in network-focused roles, delivering resilient solutions in high-pressure environments. I also run a Proxmox-based homelab and a Terraform/Ansible-provisioned Kubernetes cluster for continuous learning and portfolio work.
+    skills:
+      enable: true
+      title: "Skills & tools"
+      items:
+        - "Terraform (modules, env stacks)"
+        - "AWS (Route 53, ACM, CloudFront, S3)"
+        - "Automation: Ansible"
+        - "CI/CD pipelines"
+        - "Docker & containerisation"
+        - "Linux & Windows Server"
+        - "VMware vSphere & Proxmox"
+        - "Networking (design, security, firewalls)"
+
+  experience:
+    enable: true
+    items:
+      - company: "Totally Group PLC"
+        companyUrl: "#"
+        jobs:
+          - name: "Senior Infrastructure Engineer"
+            date: "Apr 2024 – Present"
+            content: |-
+              Responsible for 24/7 infrastructure across physical/virtual platforms, networking, VPNs, firewalls, and cloud environments — with a focus on automation, monitoring, and security.
+
+              - Automated critical patching across Windows and Linux using Ansible.
+              - Architected and delivered a company-wide network redesign and a full Zabbix monitoring suite integrated into service workflows.
+              - Improved AWS IAM security by removing root/shared credentials and implementing role-based least-privilege access.
+              - Led a VMware to Hyper-V migration with minimal downtime and maintained service continuity.
+              - Built and standardised SOPs / knowledge base to streamline ops and reduce toil.
+
+      - company: "Royal Air Force"
+        companyUrl: "#"
+        jobs:
+          - name: "Equipment Support Manager"
+            date: "Jan 2023 – Mar 2024"
+            content: |-
+              Managed multiple networking and satcom systems across distributed sites, coordinating fleet-wide updates and preventive maintenance while working with industry suppliers and stakeholders.
+
+          - name: "Network Manager"
+            date: "Dec 2021 – Jan 2023"
+            content: |-
+              Led and mentored a team of technicians; managed forecasting/inventory for multiple equipment types; planned and delivered networking + satcom deployments and integrations.
+
+          - name: "Network Engineer"
+            date: "Feb 2019 – Dec 2021"
+            content: |-
+              Designed and deployed network infrastructure across multiple sites using routing and VPN technologies.
+
+              - Produced L2/L3 designs and diagrams for large multi-customer environments.
+              - Enabled remote management/maintenance of backbone networks to improve uptime.
+              - Virtualised physical servers to improve upgrade, backup, and DR processes.
+
+  projects:
+    enable: true
+    items:
+      - title: "Terraform modules library"
+        content: "Reusable AWS Terraform modules (S3 private origin bucket, CloudFront static site, etc.) versioned via Git tags."
+        image: /images/projects/terraform.svg
+        featured:
+          name: "GitHub"
+          link: "https://github.com/kallum-cooper/terraform-modules"
+        badges:
+          - "Terraform"
+          - "AWS"
+          - "Modules"
+
+      - title: "kallumcooper.co.uk infrastructure"
+        content: "Production environment stack that composes the module library to deploy the live site on AWS (Route 53, ACM, CloudFront, private S3)."
+        image: /images/projects/hugo.svg
+        featured:
+          name: "GitHub"
+          link: "https://github.com/kallum-cooper/kallumcooper-infra"
+        badges:
+          - "Terraform"
+          - "AWS"
+          - "IaC"
+
+      - title: "Homelab platform (Proxmox + K8s)"
+        content: "3-node HA Proxmox cluster + NAS; monitoring stack (Grafana/Zabbix), and a Terraform/Ansible-provisioned Kubernetes cluster for experimentation."
+        image: /images/projects/proxmox.svg
+        featured:
+          name: "Write-up (soon)"
+          link: "#"
+        badges:
+          - "Proxmox"
+          - "Kubernetes"
+          - "Ansible"
+
+  contact:
+    enable: true
+    content: "Want to get in touch? Email is the quickest for now — a serverless contact form is coming next (API Gateway + Lambda + SES)."
+    btnName: "Email me"
+    btnLink: "mailto:contact@kallumcooper.co.uk"
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: "https://github.com/kallum-cooper"
+      linkedin: "https://www.linkedin.com/in/kallum-cooper/"
+      email: "mailto:kallumcooper97@gmail.com"

@@ -1,0 +1,10 @@
+baseURL = "https://kallumcooper.co.uk/"
+languageCode = "en-gb"
+title = "Kallum Cooper"
+theme = "hugo-profile"
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
