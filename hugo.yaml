@@ -25,7 +25,7 @@ theme: "hugo-profile"
 
 params:
   title: "Kallum Cooper"
-  description: "test Infrastructure Engineer • AWS Cloud Practitioner • Infrastructure • Automation • ex-RAF"
+  description: "Infrastructure Engineer • AWS Cloud Practitioner • Infrastructure • Automation • ex-RAF"
   favicon: "favicon.svg"
 
   useBootstrapCDN: false
@@ -52,7 +52,7 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Kallum Cooper"
-    subtitle: "Senior Infrastructure Engineer"
+    subtitle: "Infrastructure Engineer"
     content: "I build reliable infrastructure with Terraform and automation — spanning AWS, Linux/Windows estates, and enterprise networking. This site is part of my Terraform module portfolio and as such was built using Terraform and hosted via AWS."
     image: /images/hero.png
     Width: 520
