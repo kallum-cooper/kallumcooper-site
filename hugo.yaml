@@ -25,7 +25,7 @@ theme: "hugo-profile"
 
 params:
   title: "Kallum Cooper"
-  description: "Infrastructure Engineer • AWS Cloud Practitioner • Infrastructure • Automation • ex-RAF"
+  description: "test Infrastructure Engineer • AWS Cloud Practitioner • Infrastructure • Automation • ex-RAF"
   favicon: "favicon.svg"
 
   useBootstrapCDN: false
