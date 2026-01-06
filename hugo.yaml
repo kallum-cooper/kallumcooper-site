@@ -161,7 +161,7 @@ params:
         content: "3-node HA Proxmox cluster + NAS; monitoring stack (Grafana/Zabbix), and a Terraform/Ansible-provisioned Kubernetes cluster for experimentation."
         image: /images/projects/proxmox.svg
         featured:
-          name: "Write-up (soon)"
+          name: "N/A"
           link: "#"
         badges:
           - "Proxmox"
@@ -170,7 +170,7 @@ params:
 
   contact:
     enable: true
-    content: "Want to get in touch? Email is the quickest for now — a serverless contact form is coming next (API Gateway + Lambda + SES)."
+    content: "Want to get in touch? Email is the quickest."
     btnName: "Email me"
     btnLink: "mailto:contact@kallumcooper.co.uk"
 
