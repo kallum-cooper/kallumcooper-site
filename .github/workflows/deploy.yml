@@ -21,9 +21,23 @@ jobs:
           hugo-version: "0.152.2"
           extended: true
 
-      - name: Build
+      - name: Clean + Build
         run: |
-          hugo --minify --config ./hugo.yaml
+          set -euo pipefail
+
+          echo "== Clean old build output =="
+          rm -rf public resources
+
+          echo "== Build to ./public using hugo.yaml =="
+          hugo --minify --config ./hugo.yaml --cleanDestinationDir --destination ./public
+
+          echo "== Prove what got built (subtitle check) =="
+          echo "--- public/index.html (matching lines) ---"
+          grep -nE "Senior Infrastructure Engineer|Infrastructure Engineer" public/index.html || true
+
+          echo "== Show publishDir Hugo is using =="
+          hugo config --config ./hugo.yaml | grep -i publishdir || true
+
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -41,7 +55,7 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id "${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}" \
             --paths "/*"
-            
+
       - name: Debug config + output
         run: |
           echo "== Config subtitle from hugo.yaml =="
