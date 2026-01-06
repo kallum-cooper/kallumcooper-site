@@ -41,3 +41,15 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id "${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}" \
             --paths "/*"
+            
+      - name: Debug config + output
+        run: |
+          echo "== Config subtitle from hugo.yaml =="
+          grep -n 'subtitle:' hugo.yaml || true
+
+          echo "== What Hugo thinks the config is (subtitle) =="
+          hugo config --config ./hugo.yaml | grep -i subtitle || true
+
+          echo "== Grep built HTML for subtitle text =="
+          grep -Rni "Infrastructure Engineer" public | head -n 20 || true
+          grep -Rni "Senior Infrastructure Engineer" public | head -n 20 || true
