@@ -32,6 +32,9 @@ params:
   mathjax: false
   animate: true
 
+  theme:
+    defaultTheme: "dark"
+
   navbar:
     align: ms-auto
     brandName: "Kallum Cooper"
