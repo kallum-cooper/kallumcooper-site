@@ -101,6 +101,30 @@
 </style>
 
 <link rel="stylesheet" href="/css/site.css" media="all">
+<script>
+  window.addEventListener("DOMContentLoaded", async () => {
+    const counter = document.createElement("aside");
+    counter.className = "site-visit-counter";
+    counter.setAttribute("aria-label", "Site visit count");
+    counter.textContent = "... visits";
+    document.body.appendChild(counter);
+
+    try {
+      const response = await fetch("\"https://z0b0h67qb5.execute-api.eu-west-2.amazonaws.com/count\"", {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error("Counter request failed");
+      }
+
+      const data = await response.json();
+      counter.textContent = `${Number(data.count).toLocaleString()} visits`;
+    } catch (_error) {
+      counter.remove();
+    }
+  });
+</script>
 
 
 <meta name="description" content="Tags of Kallum Cooper">
