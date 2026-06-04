@@ -99,6 +99,21 @@ params:
   experience:
     enable: true
     items:
+      - company: "Amplience"
+        companyUrl: "https://amplience.com/"
+        jobs:
+          - name: "Mid-Level Operations Engineer"
+            date: "2026 – Present"
+            content: |-
+              Supporting and improving cloud infrastructure across AWS-focused environments, working closely with operations and engineering teams to keep systems secure, observable, resilient, and production-ready.
+
+              - Provision, monitor, and maintain AWS infrastructure including compute, storage, IAM, networking, and supporting platform services.
+              - Automate operational tasks with scripting and infrastructure-as-code using tools such as Terraform, CloudFormation, AWS CDK, Bash, and Python.
+              - Apply security best practices across IAM, secrets, certificates, logging, vulnerability remediation, and environment configuration.
+              - Support change management through planning, documentation, peer review, deployment checks, and post-change verification.
+              - Investigate incidents, monitor service health and performance, and contribute to on-call operations and reliability improvements.
+              - Collaborate with engineering teams on CI/CD pipelines, architecture decisions, production troubleshooting, and internal documentation.
+
       - company: "Totally Group PLC"
         companyUrl: "#"
         jobs:
