@@ -675,6 +675,24 @@ Kallum Cooper
                                     aria-selected="true"
                                     role="tab"
                                     data-bs-toggle="pill"
+                                    id='amplience-2026-present-tab'
+                                    data-bs-target='#pills-amplience-2026-present'
+                                    aria-controls='amplience-2026-present'
+                                >
+                                    Amplience
+                                </div>
+                            </li>
+                        
+                            
+                            
+                                
+                            
+                            <li class="nav-item px-1 bg-transparent" role="presentation">
+                                <div
+                                    class="nav-link  bg-transparent"
+                                    aria-selected="true"
+                                    role="tab"
+                                    data-bs-toggle="pill"
                                     id='totally-group-plc-apr-2024-present-tab'
                                     data-bs-target='#pills-totally-group-plc-apr-2024-present'
                                     aria-controls='totally-group-plc-apr-2024-present'
@@ -713,6 +731,52 @@ Kallum Cooper
                             
                             <div
                                 class="tab-pane fade bg-transparent show active"
+                                role="tabpanel"
+                                id='pills-amplience-2026-present'
+                                aria-labelledby='amplience-2026-present-tab'
+                            >
+                                
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <span class="h4">Mid-Level Operations Engineer</span>
+                                                
+                                                
+                                                
+                                                
+                                                    <small>-</small>
+                                                    <a href="https://amplience.com/" target="_blank">Amplience</a>
+                                                
+                                            </div>
+                                            <div class="d-block">
+                                                <small>2026 – Present</small>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="pb-2 pb-3">
+                                            <p>Supporting and improving cloud infrastructure across AWS-focused environments, working closely with operations and engineering teams to keep systems secure, observable, resilient, and production-ready.</p>
+<ul>
+<li>Provision, monitor, and maintain AWS infrastructure including compute, storage, IAM, networking, and supporting platform services.</li>
+<li>Automate operational tasks with scripting and infrastructure-as-code using tools such as Terraform, CloudFormation, AWS CDK, Bash, and Python.</li>
+<li>Apply security best practices across IAM, secrets, certificates, logging, vulnerability remediation, and environment configuration.</li>
+<li>Support change management through planning, documentation, peer review, deployment checks, and post-change verification.</li>
+<li>Investigate incidents, monitor service health and performance, and contribute to on-call operations and reliability improvements.</li>
+<li>Collaborate with engineering teams on CI/CD pipelines, architecture decisions, production troubleshooting, and internal documentation.</li>
+</ul>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        
+                        
+                            
+                            
+                            
+                            
+                                
+                            
+                            <div
+                                class="tab-pane fade bg-transparent "
                                 role="tabpanel"
                                 id='pills-totally-group-plc-apr-2024-present'
                                 aria-labelledby='totally-group-plc-apr-2024-present-tab'
@@ -1068,17 +1132,11 @@ Kallum Cooper
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+    if (document.body.className.includes("light")) {
         document.documentElement.classList.add('dark');
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-        document.documentElement.classList.remove('dark');
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
     }
-
 </script>
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {

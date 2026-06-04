@@ -1,1 +1,30 @@
 <link rel="stylesheet" href="/css/site.css" media="all">
+
+{{- with .Site.Params.visitCounter }}
+{{- if and .enable .counterUrl }}
+<script>
+  window.addEventListener("DOMContentLoaded", async () => {
+    const counter = document.createElement("aside");
+    counter.className = "site-visit-counter";
+    counter.setAttribute("aria-label", "Site visit count");
+    counter.textContent = "... visits";
+    document.body.appendChild(counter);
+
+    try {
+      const response = await fetch({{ .counterUrl | jsonify }}, {
+        cache: "no-store",
+      });
+
+      if (!response.ok) {
+        throw new Error("Counter request failed");
+      }
+
+      const data = await response.json();
+      counter.textContent = `${Number(data.count).toLocaleString()} visits`;
+    } catch (_error) {
+      counter.remove();
+    }
+  });
+</script>
+{{- end }}
+{{- end }}
