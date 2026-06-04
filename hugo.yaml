@@ -34,7 +34,7 @@ params:
 
   visitCounter:
     enable: true
-    counterUrl: ""
+    counterUrl: "https://z0b0h67qb5.execute-api.eu-west-2.amazonaws.com/count"
 
   theme:
     defaultTheme: "dark"
@@ -107,7 +107,7 @@ params:
         companyUrl: "https://amplience.com/"
         jobs:
           - name: "Mid-Level Operations Engineer"
-            date: "2026 – Present"
+            date: "2026 - Present"
             content: |-
               Supporting and improving cloud infrastructure across AWS-focused environments, working closely with operations and engineering teams to keep systems secure, observable, resilient, and production-ready.
 
@@ -122,7 +122,7 @@ params:
         companyUrl: "#"
         jobs:
           - name: "Senior Infrastructure Engineer"
-            date: "Apr 2024 – Present"
+            date: "Apr 2024 - Present"
             content: |-
               Responsible for 24/7 infrastructure across physical/virtual platforms, networking, VPNs, firewalls, and cloud environments — with a focus on automation, monitoring, and security.
 
@@ -136,17 +136,17 @@ params:
         companyUrl: "#"
         jobs:
           - name: "Equipment Support Manager"
-            date: "Jan 2023 – Mar 2024"
+            date: "Jan 2023 - Mar 2024"
             content: |-
               Managed multiple networking and satcom systems across distributed sites, coordinating fleet-wide updates and preventive maintenance while working with industry suppliers and stakeholders.
 
           - name: "Network Manager"
-            date: "Dec 2021 – Jan 2023"
+            date: "Dec 2021 - Jan 2023"
             content: |-
               Led and mentored a team of technicians; managed forecasting/inventory for multiple equipment types; planned and delivered networking + satcom deployments and integrations.
 
           - name: "Network Engineer"
-            date: "Feb 2019 – Dec 2021"
+            date: "Feb 2019 - Dec 2021"
             content: |-
               Designed and deployed network infrastructure across multiple sites using routing and VPN technologies.
 
