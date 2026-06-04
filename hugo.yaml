@@ -32,6 +32,10 @@ params:
   mathjax: false
   animate: true
 
+  visitCounter:
+    enable: true
+    counterUrl: ""
+
   theme:
     defaultTheme: "dark"
 
