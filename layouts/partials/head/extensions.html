@@ -11,7 +11,7 @@
     document.body.appendChild(counter);
 
     try {
-      const response = await fetch({{ .counterUrl | jsonify }}, {
+      const response = await fetch("{{ .counterUrl }}", {
         cache: "no-store",
       });
 
