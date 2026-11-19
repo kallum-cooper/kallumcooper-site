@@ -23,10 +23,17 @@ theme: "hugo-profile"
 #       url: /#contact
 #       weight: 4
 
+Menus:
+  main:
+    - identifier: how-this-site-works
+      name: How this site works
+      url: /how-this-site-works/
+      weight: 10
+
 params:
   title: "Kallum Cooper"
   description: "Mid-Level Operations Engineer specialising in infrastructure automation, cloud, and enterprise networking. This site is part of my Terraform module portfolio and as such was built using Terraform and hosted via AWS."
-  favicon: "favicon.svg"
+  favicon: "/favicon.svg"
 
   useBootstrapCDN: false
   mathjax: false
@@ -171,6 +178,7 @@ params:
       - title: "Homelab IPAM"
         content: "A lightweight, self-hosted IP address management dashboard for Docker, with automatic LAN discovery, persistent device history, and optional UniFi hostname enrichment."
         image: /images/projects/homelab-ipam.svg
+        caseStudy: /case-studies/homelab-ipam/
         featured:
           name: "GitHub"
           link: "https://github.com/kallum-cooper/homelab-ipam"

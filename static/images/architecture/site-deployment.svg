@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc"><title id="title">Deployment · static site pipeline</title><desc id="desc">Source and theme submodules → generated public/ files → updated origin → refreshed edge cache</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#62d5c4"/></marker></defs>
+<rect width="1000" height="280" rx="20" fill="#151a21"/>
+<text x="30" y="42" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="20">Deployment · static site pipeline</text>
+<rect x="30" y="85" width="210" height="105" rx="12" fill="#1d2735" stroke="#62d5c4" stroke-width="2"/>
+<text x="135.0" y="128" text-anchor="middle" fill="#e8eef7" font-family="system-ui,sans-serif" font-size="21">GitHub</text>
+<text x="135.0" y="160" text-anchor="middle" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="16">Push to main / master</text>
+<path d="M244 138h22" stroke="#62d5c4" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="270" y="85" width="210" height="105" rx="12" fill="#1d2735" stroke="#62d5c4" stroke-width="2"/>
+<text x="375.0" y="128" text-anchor="middle" fill="#e8eef7" font-family="system-ui,sans-serif" font-size="21">GitHub Actions</text>
+<text x="375.0" y="160" text-anchor="middle" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="16">Hugo Extended build</text>
+<path d="M484 138h22" stroke="#62d5c4" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="510" y="85" width="210" height="105" rx="12" fill="#1d2735" stroke="#62d5c4" stroke-width="2"/>
+<text x="615.0" y="128" text-anchor="middle" fill="#e8eef7" font-family="system-ui,sans-serif" font-size="21">S3 sync</text>
+<text x="615.0" y="160" text-anchor="middle" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="16">Upload + delete stale files</text>
+<path d="M724 138h22" stroke="#62d5c4" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="750" y="85" width="210" height="105" rx="12" fill="#1d2735" stroke="#62d5c4" stroke-width="2"/>
+<text x="855.0" y="128" text-anchor="middle" fill="#e8eef7" font-family="system-ui,sans-serif" font-size="21">CloudFront</text>
+<text x="855.0" y="160" text-anchor="middle" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="16">Invalidate /*</text>
+<text x="30" y="242" fill="#b8c4d6" font-family="system-ui,sans-serif" font-size="17">Source and theme submodules → generated public/ files → updated origin → refreshed edge cache</text></svg>
