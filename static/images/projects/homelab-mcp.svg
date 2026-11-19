@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Homelab MCP</title>
+  <desc id="desc">An assistant connected through MCP to homelab servers.</desc>
+  <rect width="1200" height="630" rx="32" fill="#111418"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#151a21"/>
+  <g fill="none" stroke="#62d5c4" stroke-width="6">
+    <path d="M300 300h190m200 0h190M880 230v140m0-140h50m-50 140h50"/>
+    <rect x="150" y="240" width="150" height="120" rx="26"/>
+    <rect x="490" y="240" width="200" height="120" rx="26"/>
+    <rect x="930" y="195" width="120" height="70" rx="12"/>
+    <rect x="930" y="335" width="120" height="70" rx="12"/>
+  </g>
+  <g fill="#e8eef7" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="225" y="312" font-size="32">AI</text>
+    <text x="590" y="312" font-size="32">MCP</text>
+  </g>
+  <g fill="#62d5c4"><circle cx="960" cy="230" r="6"/><circle cx="960" cy="370" r="6"/></g>
+  <text x="92" y="155" fill="#e8eef7" font-size="54" font-family="system-ui, sans-serif" font-weight="700">Homelab MCP</text>
+  <text x="92" y="500" fill="#b8c4d6" font-size="28" font-family="system-ui, sans-serif">Canonical inventory · Guarded operations · Audit trails</text>
+</svg>

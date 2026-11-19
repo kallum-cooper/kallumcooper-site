@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Homelab IPAM</title>
+  <desc id="desc">A network discovery dashboard with device inventory rows.</desc>
+  <rect width="1200" height="630" rx="32" fill="#111418"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#151a21"/>
+  <rect x="150" y="205" width="900" height="220" rx="20" fill="#1d2735" stroke="#7cb5ff" stroke-width="4"/>
+  <path d="M150 260h900M460 260v165M750 260v165M150 315h900M150 370h900" stroke="#34455c" stroke-width="3"/>
+  <g fill="#b8c4d6" font-family="system-ui, sans-serif" font-size="25">
+    <text x="185" y="243">ADDRESS</text><text x="495" y="243">DEVICE</text><text x="785" y="243">DISCOVERY</text>
+    <text x="185" y="298">192.0.2.10</text><text x="495" y="298">gateway</text><text x="785" y="298">UniFi</text>
+    <text x="185" y="353">192.0.2.20</text><text x="495" y="353">server</text><text x="785" y="353">Reverse DNS</text>
+    <text x="185" y="408">192.0.2.30</text><text x="495" y="408">workstation</text><text x="785" y="408">LAN scan</text>
+  </g>
+  <text x="92" y="155" fill="#e8eef7" font-size="54" font-family="system-ui, sans-serif" font-weight="700">Homelab IPAM</text>
+  <text x="92" y="500" fill="#b8c4d6" font-size="28" font-family="system-ui, sans-serif">LAN discovery · Device history · UniFi enrichment</text>
+</svg>
