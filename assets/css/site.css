@@ -1,0 +1,251 @@
+/* Match the opening statement's Alata font across these sections. */
+#about,
+#experience,
+#projects,
+#about .secondary-font,
+#about #secondary-font,
+#projects .secondary-font {
+    font-family: "Alata", sans-serif;
+}
+
+#projects .card .card-head {
+    aspect-ratio: 1200 / 630;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .card .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#hero .container {
+    max-width: 1760px;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+#hero h1 {
+    font-size: clamp(48px, 8vw, 92px);
+}
+
+#hero h2 {
+    font-size: clamp(42px, 7vw, 68px);
+}
+
+#hero .image img {
+    width: min(100%, 1000px);
+    max-width: none;
+}
+
+@media (min-width: 992px) {
+    #hero .container > .row > .content {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+
+    #hero .container > .row > .col-lg-4 {
+        flex: 0 0 auto;
+        width: 55%;
+    }
+
+    #hero .image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    #hero .image img {
+        width: min(100%, 1080px);
+    }
+}
+
+@media (max-width: 991.98px) {
+    #hero .image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #hero .image img {
+        width: min(100%, 680px);
+    }
+}
+
+.site-visit-counter {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1040;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    background: rgba(16, 24, 39, 0.78);
+    color: #f8fafc;
+    font-size: 0.82rem;
+    line-height: 1;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 575.98px) {
+    .site-visit-counter {
+        right: 0.75rem;
+        bottom: 0.75rem;
+        font-size: 0.78rem;
+    }
+}
+
+/* Long-form project and architecture pages. */
+.portfolio-page {
+    font-family: "Alata", sans-serif;
+    padding: 3rem 1.25rem 5rem;
+}
+
+.portfolio-shell {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.portfolio-page a {
+    color: var(--text-link-color);
+    text-underline-offset: 0.2em;
+}
+
+.portfolio-back {
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+.portfolio-intro {
+    max-width: 850px;
+    margin-bottom: 3rem;
+}
+
+.portfolio-eyebrow {
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.portfolio-intro h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+}
+
+.portfolio-lead {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-intro .btn,
+#projects .project-case-study {
+    border: 1px solid var(--text-link-color);
+    border-radius: 0.5rem;
+}
+
+.portfolio-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.portfolio-toc {
+    position: sticky;
+    top: 6rem;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    background: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.portfolio-toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.portfolio-toc ul ul {
+    padding-left: 0.75rem;
+}
+
+.portfolio-toc li {
+    margin-top: 0.65rem;
+}
+
+.portfolio-toc a {
+    text-decoration: none;
+}
+
+.portfolio-content {
+    min-width: 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.portfolio-content h2 {
+    font-size: 1.8rem;
+    margin: 3rem 0 1rem;
+    scroll-margin-top: 6rem;
+}
+
+.portfolio-content > h2:first-child {
+    margin-top: 0;
+}
+
+.portfolio-content h3 {
+    font-size: 1.3rem;
+    margin: 2rem 0 0.75rem;
+    scroll-margin-top: 6rem;
+}
+
+.portfolio-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 1.5rem auto;
+}
+
+.portfolio-content pre {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    overflow-x: auto;
+    background: var(--secondary-color);
+}
+
+.portfolio-content table {
+    display: block;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-content th,
+.portfolio-content td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--text-secondary-color);
+    vertical-align: top;
+}
+
+@media (max-width: 991.98px) {
+    .portfolio-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+    }
+
+    .portfolio-toc {
+        position: static;
+    }
+}

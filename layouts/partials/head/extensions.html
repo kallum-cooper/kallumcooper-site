@@ -1,4 +1,4 @@
-{{- $siteCSS := resources.FromString "css/site.css" (readFile "static/css/site.css") | fingerprint -}}
+{{- $siteCSS := resources.Get "css/site.css" | fingerprint -}}
 <link rel="stylesheet" href="{{ $siteCSS.RelPermalink }}" integrity="{{ $siteCSS.Data.Integrity }}" media="all">
 
 {{- with .Site.Params.visitCounter }}
