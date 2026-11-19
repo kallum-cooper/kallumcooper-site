@@ -157,6 +157,28 @@ params:
   projects:
     enable: true
     items:
+      - title: "Homelab MCP"
+        content: "A TypeScript MCP server that connects AI assistants to homelab inventory and guarded Proxmox guest operations, with canonical resource identities and audit logging."
+        image: /images/projects/homelab-mcp.svg
+        featured:
+          name: "GitHub"
+          link: "https://github.com/kallum-cooper/homelab-mcp"
+        badges:
+          - "TypeScript"
+          - "MCP"
+          - "Proxmox"
+
+      - title: "Homelab IPAM"
+        content: "A lightweight, self-hosted IP address management dashboard for Docker, with automatic LAN discovery, persistent device history, and optional UniFi hostname enrichment."
+        image: /images/projects/homelab-ipam.svg
+        featured:
+          name: "GitHub"
+          link: "https://github.com/kallum-cooper/homelab-ipam"
+        badges:
+          - "Docker"
+          - "Networking"
+          - "UniFi"
+
       - title: "Terraform modules library"
         content: "Reusable AWS Terraform modules (S3 private origin bucket, CloudFront static site, etc.) versioned via Git tags."
         image: /images/projects/terraform.svg
